@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.8273741, g: 0.7036566, b: 0.6521342, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -820,20 +820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8128502a7d42a8d49b869d36d3d943e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color1: {r: 0, g: 0, b: 0, a: 0}
-  color2: {r: 0, g: 0, b: 0, a: 0}
-  gimblePos: {fileID: 0}
-  gimbleRot: {fileID: 0}
-  setPos1: 0
-  setPos2: 0
-  world1: 0
-  world2: 0
-  zAngle: 0
-  startFrom: 0
-  threshHold: 0
-  world1Location: {x: 0, y: 0, z: 0}
-  world2Location: {x: 0, y: 0, z: 0}
-  locationValue: 0
 --- !u!114 &1378185370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,15 +828,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1378185367}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b341c4026b536054aba9d66aeca3ea40, type: 3}
+  m_Script: {fileID: 11500000, guid: 852817e4f4e499b488ef388b26c5d6a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   gyroDebug: {fileID: 0}
   gyroSliderText: {fileID: 0}
   gyroSpeedSlider: {fileID: 0}
-  gyroSpeed: 1
-  mouseSpeed: 1
+  gyroSpeed: 0
+  mouseSpeed: 0
   recenter: 0
+  gimbleA: {fileID: 0}
+  gimbleB: {fileID: 0}
 --- !u!1 &1759917619
 GameObject:
   m_ObjectHideFlags: 0
