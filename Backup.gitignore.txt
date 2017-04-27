@@ -3,27 +3,25 @@
 # =============== #
 [Tt]emp/
 [Oo]bj/
-[Bb]uild
+[Bb]uild[s]
+[Ll]ibrary/
 /[Ll]ibrary/
-
 sysinfo.txt
 *.stackdump
-
  
-# ============================================= #
-# Visual Studio / MonoDevelop / Rider generated #
-# ============================================= #
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
 [Ee]xported[Oo]bj/
 .vs/
 /*.userprefs
-/*.csproj
+*.csproj
 /*.pidb
 /*.suo
 /*.sln*
 /*.user
 /*.unityproj
 /*.booproj
-/.idea*/
  
 # ============ #
 # OS generated #
@@ -32,16 +30,7 @@ sysinfo.txt
 ._*
 .Spotlight-V100
 .Trashes
+Icon?
 ehthumbs.db
 [Tt]humbs.db
-[Dd]esktop.ini
-
-
-# ==== #
-# Stef #
-# ==== #
-
-[Ll]ibrary/
-*.meta
-*.info
-*.bin
+AutiWorld.sln
