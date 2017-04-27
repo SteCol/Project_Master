@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 703162210}
   - component: {fileID: 703162209}
   - component: {fileID: 703162213}
+  - component: {fileID: 703162214}
   m_Layer: 0
   m_Name: Camera
   m_TagString: MainCamera
@@ -361,7 +362,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 25.56
+  near clip plane: 1
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -394,6 +395,20 @@ MonoBehaviour:
   PlayerCopy: {fileID: 833556275}
   moveSpeed: 1
   cameraGimble: {fileID: 1378185367}
+--- !u!114 &703162214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 703162207}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2b55e6ba679da4ca19c02e3e5c3158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  startTransform: {x: 0, y: 0, z: 0}
+  newTransform: {x: 0, y: 0, z: 0}
 --- !u!4 &802301980 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4695029930106212, guid: a39f4a9a7c86fca4b8cc8d66e020a970,
@@ -641,7 +656,7 @@ GameObject:
   - component: {fileID: 1378185371}
   m_Layer: 0
   m_Name: YawGimble
-  m_TagString: Untagged
+  m_TagString: CameraGimble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -888,6 +903,10 @@ Prefab:
       propertyPath: m_TagString
       value: World_Human
       objectReference: {fileID: 0}
+    - target: {fileID: 1278192766180086, guid: a39f4a9a7c86fca4b8cc8d66e020a970, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a39f4a9a7c86fca4b8cc8d66e020a970, type: 2}
   m_IsPrefabParent: 0
@@ -908,7 +927,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1759917620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,10 +973,10 @@ Canvas:
   m_GameObject: {fileID: 1759917619}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_RenderMode: 1
+  m_Camera: {fileID: 703162212}
+  m_PlaneDistance: 10
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
