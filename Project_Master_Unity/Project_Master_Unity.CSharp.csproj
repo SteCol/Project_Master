@@ -85,7 +85,9 @@
     <Compile Include="Assets\AssetStore Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
     <Compile Include="Assets\Scripts\Accelerometer.cs" />
     <Compile Include="Assets\Scripts\Gyro.cs" />
+    <Compile Include="Assets\Scripts\Matcher.cs" />
     <Compile Include="Assets\Scripts\Mouse.cs" />
+    <Compile Include="Assets\Scripts\Steve.cs" />
     <Compile Include="Assets\Scripts\worldSwitch.cs" />
   </ItemGroup>
   <ItemGroup>
