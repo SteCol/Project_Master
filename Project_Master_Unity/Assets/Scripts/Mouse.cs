@@ -23,14 +23,23 @@ public class Mouse : MonoBehaviour
 
     void PlayMouse()
     {
+        //Nod and Yaw, with axis.
         nodGimble.transform.Rotate(0, Input.GetAxis("Mouse_X") * mouseSpeed, 0);
         yawGimble.transform.Rotate(-Input.GetAxis("Mouse_Y") * mouseSpeed, 0, 0);
 
-        rollGimble.transform.Rotate(0, 0, roll);
+        //Roll, with mouse buttons.
+        if (Input.GetButton("LMB"))
+            roll++;
 
+        if (Input.GetButton("RMB"))
+            roll--;
+
+        //rollGimble.transform.Rotate(0, 0, roll);
+        rollGimble.transform.eulerAngles = new Vector3(0, 0, roll);
     }
 
-    void GetInfo() {
+    void GetInfo()
+    {
         nod = nodGimble.transform.rotation.x;
         yaw = yawGimble.transform.rotation.y;
         //roll = rollGimble.transform.rotation.z;
