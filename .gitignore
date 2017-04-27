@@ -43,9 +43,7 @@ ehthumbs.db
 
 
 [Ll]ibrary/
-*.meta
-*.info
-*.bin
+
 
 /[Ll]ibrary/
 /[Tt]emp/
