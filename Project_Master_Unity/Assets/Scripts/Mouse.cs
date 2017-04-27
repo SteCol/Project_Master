@@ -35,7 +35,7 @@ public class Mouse : MonoBehaviour
             roll--;
 
         //rollGimble.transform.Rotate(0, 0, roll);
-        rollGimble.transform.eulerAngles = new Vector3(0, 0, roll);
+        rollGimble.transform.eulerAngles = new Vector3(rollGimble.transform.eulerAngles.x , rollGimble.transform.eulerAngles.y, roll);
     }
 
     void GetInfo()

@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scripts\Matcher.cs" />
     <Compile Include="Assets\Scripts\Mouse.cs" />
     <Compile Include="Assets\Scripts\Steve.cs" />
+    <Compile Include="Assets\Scripts\TransformMirror.cs" />
     <Compile Include="Assets\Scripts\worldSwitch.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3,31 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Steve : MonoBehaviour {
+public class Steve : MonoBehaviour
+{
 
     [Header("Setup")]
     public GameObject Player;
+    public GameObject PlayerCopy;
+
     public float moveSpeed;
     private NavMeshAgent agent;
-    public GameObject destination;
-    public GameObject camera;
+    public GameObject cameraGimble;
 
     void Start()
     {
         Player = GameObject.FindGameObjectWithTag("Player");
-        camera = GameObject.FindGameObjectWithTag("MainCamera");
         agent = Player.GetComponent<NavMeshAgent>();
     }
 
-    void Update () {
-        if (Input.GetKey(KeyCode.Z)) {
-            this.transform.Translate(camera.transform.forward * moveSpeed * Time.deltaTime);
-        }
+    void Update()
+    {
+        //if (Input.GetKey(KeyCode.Z)) {
+        //    this.transform.Translate(GetComponent<Camera>().transform.forward * moveSpeed * Time.deltaTime);
+        //}
 
         NavMeshAgent();
-	}
+    }
 
-    void NavMeshAgent() {
+    void NavMeshAgent()
+    {
         RaycastHit hit;
 
         Vector3 forward = transform.TransformDirection(Vector3.forward);
@@ -35,11 +38,18 @@ public class Steve : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            Debug.Log("DOING NAVMESH");
-            //Ray ray = forward;
             if (Physics.Raycast(transform.position, forward, out hit))
             {
-                //Debug.Log("hit " + hit.transform.position.x + " | " + hit.transform.position.y + " | " + hit.transform.position.z);
+                if (hit.transform.tag == "World_Human")
+                {
+                    cameraGimble.GetComponent<Matcher>().target = Player;
+                }
+
+                if (hit.transform.tag == "World_Wolf")
+                {
+                    cameraGimble.GetComponent<Matcher>().target = PlayerCopy;
+                }
+
                 agent.SetDestination(hit.point);
             }
         }
