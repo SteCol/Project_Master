@@ -7,34 +7,15 @@ using System.Collections.Generic;
 
 public class Gyro : MonoBehaviour
 {
-
+    [Header("For Gyro Input")]
     public Text gyroDebug, gyroSliderText;
     public Slider gyroSpeedSlider;
     public float gyroSpeed;
-    public float mouseSpeed;
     public bool recenter;
 
-    public GameObject gimbleA, gimbleB;
-
-    // Use this for initialization
     void Start()
     {
-
-        if (!Application.isEditor)
-        {
-            StartGyro();
-        }
-        else
-        {
-            StartMouse();
-        }
-
-    }
-
-    void StartGyro()
-    {
         Debug.Log("Starting in Gyro mode.");
-
 
         Input.gyro.enabled = true;
         Screen.autorotateToPortrait = false;
@@ -43,26 +24,12 @@ public class Gyro : MonoBehaviour
         gyroSpeedSlider.value = gyroSpeed;
 
         //Screen.orientation = ScreenOrientation.AutoRotation;
-
     }
 
-    void StartMouse() {
-        Debug.Log("Starting in Mouse mode.");
-    }
     
-    // Update is called once per frame
     void Update()
     {
-
-        if (!Application.isEditor)
-        {
             PlayGyro();
-        }
-        else
-        {
-            PlayMouse();
-        }
-        
     }
 
     void PlayGyro() {
@@ -76,14 +43,6 @@ public class Gyro : MonoBehaviour
             Recenter();
             recenter = false;
         }
-    }
-
-
-    void PlayMouse() {
-        gimbleA.transform.Rotate(0, Input.GetAxis("Mouse_X") * mouseSpeed, 0);
-        gimbleB.transform.Rotate(-Input.GetAxis("Mouse_Y") * mouseSpeed, 0, 0);
-
-        gyroDebug.text = Input.GetAxis("Mouse_X").ToString("0,0") + " | " + Input.GetAxis("Mouse_Y").ToString("0,0");
     }
 
     public void Recenter()
