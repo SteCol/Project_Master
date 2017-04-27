@@ -458,56 +458,69 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 350181472}
---- !u!1 &501193021
+--- !u!1 &703162207
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 501193027}
-  - component: {fileID: 501193026}
-  - component: {fileID: 501193025}
-  - component: {fileID: 501193024}
-  - component: {fileID: 501193023}
+  - component: {fileID: 703162208}
+  - component: {fileID: 703162212}
+  - component: {fileID: 703162211}
+  - component: {fileID: 703162210}
+  - component: {fileID: 703162209}
   m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
+  m_Name: Camera
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &501193023
+--- !u!4 &703162208
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 703162207}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1081931732}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!81 &703162209
 AudioListener:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501193021}
+  m_GameObject: {fileID: 703162207}
   m_Enabled: 1
---- !u!124 &501193024
+--- !u!92 &703162210
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501193021}
+  m_GameObject: {fileID: 703162207}
   m_Enabled: 1
---- !u!92 &501193025
+--- !u!124 &703162211
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501193021}
+  m_GameObject: {fileID: 703162207}
   m_Enabled: 1
---- !u!20 &501193026
+--- !u!20 &703162212
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501193021}
+  m_GameObject: {fileID: 703162207}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.9485294, g: 0.55098397, b: 0.55098397, a: 0}
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -518,8 +531,8 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 0
-  orthographic size: 16.73
-  m_Depth: -1
+  orthographic size: 5
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -532,19 +545,6 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
---- !u!4 &501193027
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 501193021}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -43.323}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1081931732}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &714912740
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +706,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 501193027}
+  - {fileID: 703162208}
   m_Father: {fileID: 1378185368}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -834,11 +834,11 @@ MonoBehaviour:
   gyroDebug: {fileID: 0}
   gyroSliderText: {fileID: 0}
   gyroSpeedSlider: {fileID: 0}
-  gyroSpeed: 0
-  mouseSpeed: 0
+  gyroSpeed: 1
+  mouseSpeed: 1
   recenter: 0
-  gimbleA: {fileID: 0}
-  gimbleB: {fileID: 0}
+  gimbleA: {fileID: 1378185367}
+  gimbleB: {fileID: 1081931731}
 --- !u!1 &1759917619
 GameObject:
   m_ObjectHideFlags: 0
