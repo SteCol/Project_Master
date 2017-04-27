@@ -81,7 +81,7 @@ public class Gyro : MonoBehaviour
 
     void PlayMouse() {
         gimbleA.transform.Rotate(0, Input.GetAxis("Mouse_X") * mouseSpeed, 0);
-        gimbleB.transform.Rotate(Input.GetAxis("Mouse_Y") * mouseSpeed, 0, 0);
+        gimbleB.transform.Rotate(-Input.GetAxis("Mouse_Y") * mouseSpeed, 0, 0);
 
         gyroDebug.text = Input.GetAxis("Mouse_X").ToString("0,0") + " | " + Input.GetAxis("Mouse_Y").ToString("0,0");
     }
