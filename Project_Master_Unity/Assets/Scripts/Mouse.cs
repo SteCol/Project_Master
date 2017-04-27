@@ -6,9 +6,9 @@ public class Mouse : MonoBehaviour
 {
     [Header("For Mouse Input")]
     public float mouseSpeed;
-    public GameObject nodGimble, yawGimble, tiltGimble;
+    public GameObject nodGimble, yawGimble, rollGimble;
 
-    public float nod, tilt, yaw;
+    public float nod, yaw, roll;
 
     void Start()
     {
@@ -17,7 +17,7 @@ public class Mouse : MonoBehaviour
 
     void Update()
     {
-            PlayMouse();
+        PlayMouse();
         GetInfo();
     }
 
@@ -25,11 +25,14 @@ public class Mouse : MonoBehaviour
     {
         nodGimble.transform.Rotate(0, Input.GetAxis("Mouse_X") * mouseSpeed, 0);
         yawGimble.transform.Rotate(-Input.GetAxis("Mouse_Y") * mouseSpeed, 0, 0);
+
+        rollGimble.transform.Rotate(0, 0, roll);
+
     }
 
     void GetInfo() {
         nod = nodGimble.transform.rotation.x;
         yaw = yawGimble.transform.rotation.y;
-        tilt = tiltGimble.transform.rotation.z;
+        //roll = rollGimble.transform.rotation.z;
     }
 }
