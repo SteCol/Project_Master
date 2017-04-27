@@ -1,17 +1,16 @@
 fileFormatVersion: 2
-guid: 9dbd3658d96440149977f89448df9279
-timeCreated: 1493309787
+guid: 33192834fbdbf1449a26c001a7fdaa3d
+timeCreated: 1493319370
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: default
-    100002: //RootNode
-    400000: default
-    400002: //RootNode
-    2300000: default
-    3300000: default
-    4300000: default
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Icosphere
+    6400000: //RootNode
   materials:
     importMaterials: 0
     materialName: 0
@@ -36,9 +35,9 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.5
+    globalScale: 100
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
