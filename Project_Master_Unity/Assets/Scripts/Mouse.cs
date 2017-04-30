@@ -17,7 +17,7 @@ public class Mouse : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Starting in Mouse mode.");
+        StartCoroutine(GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().iDeb("Starting In MOUSE mode", 100));
         storage = GameObject.FindGameObjectWithTag("GameController").GetComponent<Storage>();
 
     }

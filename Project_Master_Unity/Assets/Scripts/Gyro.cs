@@ -15,7 +15,7 @@ public class Gyro : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Starting in Gyro mode.");
+        StartCoroutine(GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().iDeb("Starting In GYRO mode", 100));
 
         Input.gyro.enabled = true;
         Screen.autorotateToPortrait = false;
