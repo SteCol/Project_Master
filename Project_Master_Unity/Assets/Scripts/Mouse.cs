@@ -63,7 +63,6 @@ public class Mouse : MonoBehaviour
     void PlayMouse()
     {
         //Nod and Yaw, with axis, based on active world (the mouse inputs need to be switched as well.
-
         if (storage.activeWorld == Worlds.Human && lockCamera == false)
         {
             nodGimble.transform.Rotate(0, Input.GetAxis("Mouse_X") * mouseSpeed, 0);
