@@ -7,8 +7,10 @@ public class Steve : MonoBehaviour
 {
 
     [Header("Setup")]
-    public GameObject Player;
-    public GameObject PlayerCopy;
+    public GameObject player;
+    public GameObject playerCopy;
+    public GameObject destinationIndicator;
+    private Storage storage;
 
     public float moveSpeed;
     private NavMeshAgent agent;
@@ -16,16 +18,13 @@ public class Steve : MonoBehaviour
 
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player");
-        agent = Player.GetComponent<NavMeshAgent>();
+        storage = GameObject.FindGameObjectWithTag("GameController").GetComponent<Storage>();
+        player = GameObject.FindGameObjectWithTag("Player");
+        agent = player.GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
-        //if (Input.GetKey(KeyCode.Z)) {
-        //    this.transform.Translate(GetComponent<Camera>().transform.forward * moveSpeed * Time.deltaTime);
-        //}
-
         NavMeshAgent();
     }
 
@@ -40,17 +39,24 @@ public class Steve : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, forward, out hit))
             {
+                Vector3 point = new Vector3 (0,0,0);
+
                 if (hit.transform.tag == "World_Human")
                 {
-                    cameraGimble.GetComponent<Matcher>().target = Player;
+                    storage.activeWorld = Worlds.Human;
+                    point = hit.point;
+                    //cameraGimble.GetComponent<Matcher>().target = player;
                 }
 
                 if (hit.transform.tag == "World_Wolf")
                 {
-                    cameraGimble.GetComponent<Matcher>().target = PlayerCopy;
+                    storage.activeWorld = Worlds.Wolf;
+                    point = new Vector3(hit.point.x, -hit.point.y, hit.point.z);
+                    //cameraGimble.GetComponent<Matcher>().target = playerCopy;
                 }
 
-                agent.SetDestination(hit.point);
+                destinationIndicator.transform.position = point;
+                agent.SetDestination(point);
             }
         }
     }
