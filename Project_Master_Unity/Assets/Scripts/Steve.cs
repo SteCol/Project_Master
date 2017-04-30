@@ -39,7 +39,6 @@ public class Steve : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, forward, out hit))
             {
-
                 Debug.DrawRay(transform.position, hit.transform.position, Color.red);
 
                 Vector3 point = new Vector3 (0,0,0);
@@ -60,6 +59,8 @@ public class Steve : MonoBehaviour
 
                 destinationIndicator.transform.position = point; //Move the target indicator the the actual target for some visual feedback.
                 agent.SetDestination(point); //Set the NavMeshAgent to go to that point;
+
+                player.GetComponent<DrawNavPath>().DrawPath();
 
             }
         }

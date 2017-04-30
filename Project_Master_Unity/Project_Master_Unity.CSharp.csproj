@@ -82,6 +82,7 @@
     <Compile Include="Assets\Assetstore Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
     <Compile Include="Assets\Scripts\Accelerometer.cs" />
     <Compile Include="Assets\Scripts\CameraDepth.cs" />
+    <Compile Include="Assets\Scripts\DrawNavPath.cs" />
     <Compile Include="Assets\Scripts\Gyro.cs" />
     <Compile Include="Assets\Scripts\Matcher.cs" />
     <Compile Include="Assets\Scripts\Mouse.cs" />
