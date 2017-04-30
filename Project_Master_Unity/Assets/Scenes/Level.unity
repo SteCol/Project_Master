@@ -790,7 +790,7 @@ MonoBehaviour:
   mouseSpeed: 1
   nodGimble: {fileID: 1378185367}
   yawGimble: {fileID: 703162207}
-  rollGimble: {fileID: 1081931731}
+  rollGimble: {fileID: 703162207}
   nod: 0
   yaw: 0
   roll: 0
