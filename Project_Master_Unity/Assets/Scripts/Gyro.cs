@@ -8,9 +8,8 @@ using System.Collections.Generic;
 public class Gyro : MonoBehaviour
 {
     [Header("For Gyro Input")]
-    public Text gyroDebug, gyroSliderText;
-    public Slider gyroSpeedSlider;
-    public float gyroSpeed;
+    public List<Slider> gyroSliders;
+    public List<float> gyroValues;
     public bool recenter;
 
     void Start()
@@ -21,23 +20,33 @@ public class Gyro : MonoBehaviour
         Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
 
-        gyroSpeedSlider.value = gyroSpeed;
+        for (int i = 0; i < gyroSliders.Count; i++)
+        {
+            //gyroValues.Add(0.0f);
+            gyroSliders[i].value= gyroValues[i];
+        }
 
         //Screen.orientation = ScreenOrientation.AutoRotation;
     }
 
-    
+
     void Update()
     {
-            PlayGyro();
+        PlayGyro();
     }
 
-    void PlayGyro() {
-        gyroSpeed = gyroSpeedSlider.value;
-        gyroSliderText.text = gyroSpeedSlider.value.ToString();
-        gyroDebug.text = Input.gyro.rotationRateUnbiased.x.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.y.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.z.ToString("0,0");
+    void PlayGyro()
+    {
 
-        transform.Rotate(-Input.gyro.rotationRateUnbiased.x * gyroSpeed, -Input.gyro.rotationRateUnbiased.y * gyroSpeed, Input.gyro.rotationRateUnbiased.z * gyroSpeed);
+        for (int i = 0; i < gyroSliders.Count; i++)
+        {
+            gyroValues[i] = gyroSliders[i].value;
+            gyroSliders[i].GetComponentInChildren<Text>().text = gyroSliders[i].value.ToString("00.00");
+        }
+
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().Deb(Input.gyro.rotationRateUnbiased.x.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.y.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.z.ToString("0,0"));
+
+        transform.Rotate(-Input.gyro.rotationRateUnbiased.x * gyroValues[0], -Input.gyro.rotationRateUnbiased.y * gyroValues[1], Input.gyro.rotationRateUnbiased.z * gyroValues[2]);
         if (recenter)
         {
             Recenter();
