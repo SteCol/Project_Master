@@ -9,8 +9,9 @@ public class Gyro : MonoBehaviour
 {
     [Header("For Gyro Input")]
     public Text gyroDebug, gyroSliderText;
-    public Slider gyroSpeedSlider;
-    public float gyroSpeed;
+    public List<Slider> gyroSliders;
+    public List<float> gyroValues;
+    public float xSpeed, ySpeed, zSpeed;
     public bool recenter;
 
     void Start()
@@ -20,8 +21,12 @@ public class Gyro : MonoBehaviour
         Input.gyro.enabled = true;
         Screen.autorotateToPortrait = false;
         Screen.autorotateToPortraitUpsideDown = false;
-        if (gyroSpeedSlider != null)
-            gyroSpeedSlider.value = gyroSpeed;
+
+        for (int i = 0; i < gyroSliders.Count; i++)
+        {
+            gyroValues.Add(0.0f);
+            gyroSliders[i].value= gyroValues[i];
+        }
 
         //Screen.orientation = ScreenOrientation.AutoRotation;
     }
@@ -34,17 +39,16 @@ public class Gyro : MonoBehaviour
 
     void PlayGyro()
     {
-        if (gyroSpeedSlider != null)
-        {
-            gyroSpeed = gyroSpeedSlider.value;
-            gyroSliderText.text = gyroSpeedSlider.value.ToString();
-        }
 
-       
+        for (int i = 0; i < gyroSliders.Count; i++)
+        {
+            gyroValues[i] = gyroSliders[i].value;
+            gyroSliders[i].GetComponentInChildren<Text>().text = gyroSliders[i].value.ToString("00.00");
+        }
 
         GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().Deb(Input.gyro.rotationRateUnbiased.x.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.y.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.z.ToString("0,0"));
 
-        transform.Rotate(-Input.gyro.rotationRateUnbiased.x * gyroSpeed, -Input.gyro.rotationRateUnbiased.y * gyroSpeed, Input.gyro.rotationRateUnbiased.z * gyroSpeed);
+        transform.Rotate(-Input.gyro.rotationRateUnbiased.x * xSpeed, -Input.gyro.rotationRateUnbiased.y * ySpeed, Input.gyro.rotationRateUnbiased.z * zSpeed);
         if (recenter)
         {
             Recenter();

@@ -1214,8 +1214,10 @@ Transform:
   - {fileID: 1206754946}
   - {fileID: 1508167906}
   - {fileID: 833556276}
+  - {fileID: 1710374254}
+  - {fileID: 1998255546}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1081931731
 GameObject:
@@ -1747,8 +1749,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gyroDebug: {fileID: 0}
   gyroSliderText: {fileID: 0}
-  gyroSpeedSlider: {fileID: 0}
-  gyroSpeed: 1
+  gyroSliders:
+  - {fileID: 1264626115}
+  - {fileID: 498194395}
+  - {fileID: 1601465382}
+  gyroValues: []
+  xSpeed: 0
+  ySpeed: 0
+  zSpeed: 0
   recenter: 0
 --- !u!114 &1378185371
 MonoBehaviour:
@@ -2444,11 +2452,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1710374253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.2, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: -2.1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 1027068347}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1710374255
 MeshRenderer:
@@ -2954,11 +2962,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1998255542}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 3.3, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: 0, y: 1.65, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 1027068347}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1998255547
 MonoBehaviour:
