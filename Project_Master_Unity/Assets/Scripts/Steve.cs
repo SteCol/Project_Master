@@ -14,7 +14,7 @@ public class Steve : MonoBehaviour
     public float moveSpeed;
     private NavMeshAgent agent;
     public GameObject cameraGimble;
-    
+
 
     void Start()
     {
@@ -26,6 +26,9 @@ public class Steve : MonoBehaviour
     void Update()
     {
         RayCast();
+        if (agent.velocity.magnitude > 0.1f) {
+           GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().Deb("Moving");
+        }
     }
 
     void RayCast()
@@ -35,15 +38,15 @@ public class Steve : MonoBehaviour
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Debug.DrawRay(transform.position, forward, Color.green);
 
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetButtonDown("LMB"))
         {
-            StartCoroutine(GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().iDeb("Pressed A", 100));
+            StartCoroutine(GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().iDeb("Clicked", 100));
 
             if (Physics.Raycast(transform.position, forward, out hit))
             {
                 Debug.DrawRay(transform.position, hit.transform.position, Color.red);
 
-                Vector3 point = new Vector3 (0,0,0);
+                Vector3 point = new Vector3(0, 0, 0);
 
                 if (hit.transform.tag == "World_Human")
                 {

@@ -468,8 +468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -251.02, y: -100.99}
-  m_SizeDelta: {x: -534.97, y: -219}
+  m_AnchoredPosition: {x: -209, y: -100.99}
+  m_SizeDelta: {x: -451, y: -219}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &806603133
 MonoBehaviour:
@@ -505,11 +505,13 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Controls:
 
-    - A to click
+    - A or LMB to click
 
     - Q and D to rotate z-axis
 
-    - Escape to close application'
+    - Escape to close application
+
+    - "L" to lock and unlock the mouse cursor.'
 --- !u!222 &806603134
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -973,6 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5ccb7d5a083e54e881008f98cfca02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorLocked: 0
 --- !u!1 &1508167902
 GameObject:
   m_ObjectHideFlags: 0
