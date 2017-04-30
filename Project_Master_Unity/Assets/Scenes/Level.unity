@@ -507,7 +507,9 @@ MonoBehaviour:
 
     - A to click
 
-    - Q and D to rotate z-axis'
+    - Q and D to rotate z-axis
+
+    - Escape to close application'
 --- !u!222 &806603134
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -907,6 +909,7 @@ GameObject:
   - component: {fileID: 1475001855}
   - component: {fileID: 1475001856}
   - component: {fileID: 1475001857}
+  - component: {fileID: 1475001858}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -959,6 +962,17 @@ MonoBehaviour:
   msec: 0
   fps: 0
   text: 
+--- !u!114 &1475001858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475001854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5ccb7d5a083e54e881008f98cfca02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1508167902
 GameObject:
   m_ObjectHideFlags: 0
