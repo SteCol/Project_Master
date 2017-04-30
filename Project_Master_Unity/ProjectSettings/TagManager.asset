@@ -7,6 +7,7 @@ TagManager:
   - World_Human
   - World_Wolf
   - CameraGimble
+  - DebugText
   layers:
   - Default
   - TransparentFX

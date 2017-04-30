@@ -5,7 +5,6 @@ using UnityEngine.AI;
 
 public class Steve : MonoBehaviour
 {
-
     [Header("Setup")]
     public GameObject player;
     public GameObject playerCopy;
@@ -15,6 +14,7 @@ public class Steve : MonoBehaviour
     public float moveSpeed;
     private NavMeshAgent agent;
     public GameObject cameraGimble;
+    
 
     void Start()
     {
@@ -37,6 +37,8 @@ public class Steve : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
+            StartCoroutine(GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().iDeb("Pressed A", 100));
+
             if (Physics.Raycast(transform.position, forward, out hit))
             {
                 Debug.DrawRay(transform.position, hit.transform.position, Color.red);
