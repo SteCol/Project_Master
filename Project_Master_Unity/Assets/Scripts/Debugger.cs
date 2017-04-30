@@ -22,8 +22,18 @@ public class Debugger : MonoBehaviour
 
     public void Deb(string addition)
     {
-        //Storing the message
+        //Storing the message. This is for when somethign will get updated every single frame.
         storedText = storedText + "\n " + addition;
+    }
+
+    public IEnumerator iDeb(string addition, int duration)
+    {
+        //Show the massage for "duration" frames. Meaning it'll add the "addition" string again once per frame for the next "duration" frames.
+        for (int i = 0; i < duration; i++)
+        {
+            storedText = storedText + "\n " + addition;
+            yield return null;
+        }
     }
 
     void Update()
@@ -34,11 +44,11 @@ public class Debugger : MonoBehaviour
         fps = 1.0f / deltaTime;
 
         text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
-        Deb(text);
+        Deb(text); //Store the framerate for this display loop.
 
         //Display all the messages
-        debugText.text = "";
-        debugText.text = storedText;
-        storedText = "";
+        debugText.text = ""; //Empty the already displayed text.
+        debugText.text = storedText; //Show the new text stat was stored this frame.
+        storedText = ""; //Empty the stored text to recieve new text.
     }
 }

@@ -37,7 +37,8 @@ public class Steve : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().Deb("You clicked");
+            StartCoroutine(GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().iDeb("Pressed A", 100));
+
             if (Physics.Raycast(transform.position, forward, out hit))
             {
                 Debug.DrawRay(transform.position, hit.transform.position, Color.red);

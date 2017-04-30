@@ -51,6 +51,8 @@ public class Mouse : MonoBehaviour
     }
 
     public IEnumerator iRotateWorld(float _amount) {
+        StartCoroutine(GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().iDeb("Rotating World", 100));
+
         float amount = roll;
         lockCamera = true;
         for (float i = 0; i < 1.0f; i = i + 0.01f) {
