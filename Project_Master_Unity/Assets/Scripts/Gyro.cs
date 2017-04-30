@@ -8,10 +8,8 @@ using System.Collections.Generic;
 public class Gyro : MonoBehaviour
 {
     [Header("For Gyro Input")]
-    public Text gyroDebug, gyroSliderText;
     public List<Slider> gyroSliders;
     public List<float> gyroValues;
-    public float xSpeed, ySpeed, zSpeed;
     public bool recenter;
 
     void Start()
@@ -24,7 +22,7 @@ public class Gyro : MonoBehaviour
 
         for (int i = 0; i < gyroSliders.Count; i++)
         {
-            gyroValues.Add(0.0f);
+            //gyroValues.Add(0.0f);
             gyroSliders[i].value= gyroValues[i];
         }
 
@@ -48,7 +46,7 @@ public class Gyro : MonoBehaviour
 
         GameObject.FindGameObjectWithTag("GameController").GetComponent<Debugger>().Deb(Input.gyro.rotationRateUnbiased.x.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.y.ToString("0,0") + " | " + Input.gyro.rotationRateUnbiased.z.ToString("0,0"));
 
-        transform.Rotate(-Input.gyro.rotationRateUnbiased.x * xSpeed, -Input.gyro.rotationRateUnbiased.y * ySpeed, Input.gyro.rotationRateUnbiased.z * zSpeed);
+        transform.Rotate(-Input.gyro.rotationRateUnbiased.x * gyroValues[0], -Input.gyro.rotationRateUnbiased.y * gyroValues[1], Input.gyro.rotationRateUnbiased.z * gyroValues[2]);
         if (recenter)
         {
             Recenter();
