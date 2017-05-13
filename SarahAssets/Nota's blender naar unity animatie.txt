@@ -1,0 +1,12 @@
+Yo,
+
+Om de animaties mooi in Unity te kunnen importeren moeten er een paar dingen gebeuren:
+
+- Verwijder alles behalve de geanimeerde mesh en de armature uit de scene. Dus de camera, grond cirkel, lighting enzo mag er uit. Ge kunt alleen de model en mesh exporteren, maar het is veel gemakkelijker om die meteen weg te doen.
+
+- Er op letten dat alle models de zelfde orientatie hebben. Dus dat ze allemaal dezelfde as als vooruit hebben. Ik denk dat dat de z-as is.
+
+- Ik heb gemerkt dat de overgang naar walking niet goed werkt, en ik vermoed dat dat door een slecht retoteerde bone in the armature is.
+
+Cheers,
+Stef
