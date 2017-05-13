@@ -201,6 +201,7 @@
     <Compile Include="Assets\Scripts\Control\Debugger.cs" />
     <Compile Include="Assets\Scripts\Control\Storage.cs" />
     <Compile Include="Assets\Scripts\Control\worldSwitch.cs" />
+    <Compile Include="Assets\Scripts\CustomGoogleVR.cs" />
     <Compile Include="Assets\Scripts\Player\AnimationAI.cs" />
     <Compile Include="Assets\Scripts\Player\DrawNavPath.cs" />
     <Compile Include="Assets\Scripts\Player\Matcher.cs" />
@@ -237,6 +238,7 @@
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTextureOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlay.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrUnlitTransparentOverlayColor.shader" />
+    <None Include="Assets\Notes\On using Google VR.txt" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Cardboard.xml" />
     <None Include="Assets\Plugins\Android\AndroidManifest-Daydream.xml" />
     <None Include="Assets\Plugins\Android\proguard-gvr.txt" />
