@@ -127,7 +127,7 @@ ModelImporter:
     3300000: Circle
     4300000: Circle
     4300002: Steve
-    7400000: Armature|ArmatureAction
+    7400000: Steve_Idle
     9500000: //RootNode
     13700000: Steve
   materials:
@@ -152,11 +152,157 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Steve_Idle
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 113
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/L_KNEE
+        weight: 1
+      - path: Armature/L_KNEE/L_KNEE_end
+        weight: 1
+      - path: Armature/R_KNEE
+        weight: 1
+      - path: Armature/R_KNEE/R_KNEE_end
+        weight: 1
+      - path: Armature/STAARTBEEN
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_IK_ARM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_IK_ARM/L_IK_ARM_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_PALM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_PALM/L_FINGERS
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_PALM/L_FINGERS/L_FINGERS_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_TUMB_01
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_TUMB_01/L_TUMB_02
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/L_SHOULDER/L_UPPERARM/L_DOWNARM/L_TUMB_01/L_TUMB_02/L_TUMB_02_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/NECK
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/NECK/HEAD
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/NECK/HEAD/HEAD_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_IK_ARM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_IK_ARM/R_IK_ARM_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_PALM
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_PALM/R_FINGERS
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_PALM/R_FINGERS/R_FINGERS_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_TUMB_01
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_TUMB_01/R_TUMB_02
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone/Bone.002/Bone.001/Bone.003/R_SHOULDER/R_UPPERARM/R_DOWNARM/R_TUMB_01/R_TUMB_02/R_TUMB_02_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG/L_DOWNLEG
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG/L_DOWNLEG/L_HEEL
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG/L_DOWNLEG/L_HEEL/L_FOOT
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG/L_DOWNLEG/L_HEEL/L_FOOT/L_TOES
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG/L_DOWNLEG/L_HEEL/L_FOOT/L_TOES/L_TOES_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG/L_DOWNLEG/L_HEEL/L_IK_LEG
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.012/L_UPPERLEG/L_DOWNLEG/L_HEEL/L_IK_LEG/L_IK_LEG_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG/R_DOWNLEG
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG/R_DOWNLEG/R_HEEL
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG/R_DOWNLEG/R_HEEL/R_FOOT
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG/R_DOWNLEG/R_HEEL/R_FOOT/R_TOES
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG/R_DOWNLEG/R_HEEL/R_FOOT/R_TOES/R_TOES_end
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG/R_DOWNLEG/R_HEEL/R_IK_LEG
+        weight: 1
+      - path: Armature/STAARTBEEN/Bone.013/R_UPPERLEG/R_DOWNLEG/R_HEEL/R_IK_LEG/R_IK_LEG_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Circle
+        weight: 1
+      - path: Empty
+        weight: 1
+      - path: Lamp
+        weight: 1
+      - path: Steve
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.3
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
