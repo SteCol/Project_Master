@@ -1,0 +1,341 @@
+fileFormatVersion: 2
+guid: 3c631a6f2a76a0d4d8714dde54ceb12e
+timeCreated: 1494678042
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: BACK_01
+    100004: BACK_02
+    100006: BACK_03
+    100008: BACK_04
+    100010: Bone.036
+    100012: Bone.036_end
+    100014: Bone.037
+    100016: Bone.037_end
+    100018: Bone.038
+    100020: Bone.038_end
+    100022: Bone.039
+    100024: Bone.039_end
+    100026: Camera
+    100028: CENTRE
+    100030: CENTRE_end
+    100032: Cube
+    100034: Empty
+    100036: HEAD
+    100038: Hemi
+    100040: //RootNode
+    100042: L_B_FOOT
+    100044: L_B_FOOT_end
+    100046: L_B_HEEL
+    100048: L_B_LEG_01
+    100050: L_B_LEG_02
+    100052: L_B_LEG_03
+    100054: L_F_FOOT
+    100056: L_F_FOOT_end
+    100058: L_F_HEEL
+    100060: L_F_LEG_01
+    100062: L_F_LEG_02
+    100064: L_F_LEG_03
+    100066: L_HEUP
+    100068: L_SHOUDER
+    100070: Lamp
+    100072: NECK
+    100074: NOSE
+    100076: NOSE_end
+    100078: R_B_FOOT
+    100080: R_B_FOOT_end
+    100082: R_B_HEEL
+    100084: R_B_LEG_01
+    100086: R_B_LEG_02
+    100088: R_B_LEG_03
+    100090: R_F_FOOT
+    100092: R_F_FOOT_end
+    100094: R_F_HEEL
+    100096: R_F_LEG_01
+    100098: R_F_LEG_02
+    100100: R_F_LEG_03
+    100102: R_HEUP
+    100104: R_SHOUDER
+    100106: SAART_01
+    100108: SAART_02
+    100110: SAART_03
+    100112: SAART_03_end
+    100114: STAARTBEEN
+    400000: Armature
+    400002: BACK_01
+    400004: BACK_02
+    400006: BACK_03
+    400008: BACK_04
+    400010: Bone.036
+    400012: Bone.036_end
+    400014: Bone.037
+    400016: Bone.037_end
+    400018: Bone.038
+    400020: Bone.038_end
+    400022: Bone.039
+    400024: Bone.039_end
+    400026: Camera
+    400028: CENTRE
+    400030: CENTRE_end
+    400032: Cube
+    400034: Empty
+    400036: HEAD
+    400038: Hemi
+    400040: //RootNode
+    400042: L_B_FOOT
+    400044: L_B_FOOT_end
+    400046: L_B_HEEL
+    400048: L_B_LEG_01
+    400050: L_B_LEG_02
+    400052: L_B_LEG_03
+    400054: L_F_FOOT
+    400056: L_F_FOOT_end
+    400058: L_F_HEEL
+    400060: L_F_LEG_01
+    400062: L_F_LEG_02
+    400064: L_F_LEG_03
+    400066: L_HEUP
+    400068: L_SHOUDER
+    400070: Lamp
+    400072: NECK
+    400074: NOSE
+    400076: NOSE_end
+    400078: R_B_FOOT
+    400080: R_B_FOOT_end
+    400082: R_B_HEEL
+    400084: R_B_LEG_01
+    400086: R_B_LEG_02
+    400088: R_B_LEG_03
+    400090: R_F_FOOT
+    400092: R_F_FOOT_end
+    400094: R_F_HEEL
+    400096: R_F_LEG_01
+    400098: R_F_LEG_02
+    400100: R_F_LEG_03
+    400102: R_HEUP
+    400104: R_SHOUDER
+    400106: SAART_01
+    400108: SAART_02
+    400110: SAART_03
+    400112: SAART_03_end
+    400114: STAARTBEEN
+    4300000: Cube
+    7400000: Armature|ArmatureAction
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature|ArmatureAction
+      takeName: Armature|ArmatureAction
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/BACK_02
+        weight: 1
+      - path: Armature/BACK_02/BACK_01
+        weight: 1
+      - path: Armature/BACK_02/BACK_01/NECK
+        weight: 1
+      - path: Armature/BACK_02/BACK_01/NECK/HEAD
+        weight: 1
+      - path: Armature/BACK_02/BACK_01/NECK/HEAD/NOSE
+        weight: 1
+      - path: Armature/BACK_02/BACK_01/NECK/HEAD/NOSE/NOSE_end
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01/L_F_LEG_02
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01/L_F_LEG_02/L_F_LEG_03
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01/L_F_LEG_02/L_F_LEG_03/L_F_HEEL
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01/L_F_LEG_02/L_F_LEG_03/L_F_HEEL/Bone.039
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01/L_F_LEG_02/L_F_LEG_03/L_F_HEEL/Bone.039/Bone.039_end
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01/L_F_LEG_02/L_F_LEG_03/L_F_HEEL/L_F_FOOT
+        weight: 1
+      - path: Armature/BACK_02/L_SHOUDER/L_F_LEG_01/L_F_LEG_02/L_F_LEG_03/L_F_HEEL/L_F_FOOT/L_F_FOOT_end
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01/R_F_LEG_02
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01/R_F_LEG_02/R_F_LEG_03
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01/R_F_LEG_02/R_F_LEG_03/R_F_HEEL
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01/R_F_LEG_02/R_F_LEG_03/R_F_HEEL/Bone.038
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01/R_F_LEG_02/R_F_LEG_03/R_F_HEEL/Bone.038/Bone.038_end
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01/R_F_LEG_02/R_F_LEG_03/R_F_HEEL/R_F_FOOT
+        weight: 1
+      - path: Armature/BACK_02/R_SHOUDER/R_F_LEG_01/R_F_LEG_02/R_F_LEG_03/R_F_HEEL/R_F_FOOT/R_F_FOOT_end
+        weight: 1
+      - path: Armature/BACK_03
+        weight: 1
+      - path: Armature/BACK_03/BACK_04
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01/L_B_LEG_02
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01/L_B_LEG_02/L_B_LEG_03
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01/L_B_LEG_02/L_B_LEG_03/L_B_HEEL
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01/L_B_LEG_02/L_B_LEG_03/L_B_HEEL/Bone.037
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01/L_B_LEG_02/L_B_LEG_03/L_B_HEEL/Bone.037/Bone.037_end
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01/L_B_LEG_02/L_B_LEG_03/L_B_HEEL/L_B_FOOT
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/L_HEUP/L_B_LEG_01/L_B_LEG_02/L_B_LEG_03/L_B_HEEL/L_B_FOOT/L_B_FOOT_end
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01/R_B_LEG_02
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01/R_B_LEG_02/R_B_LEG_03
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01/R_B_LEG_02/R_B_LEG_03/R_B_HEEL
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01/R_B_LEG_02/R_B_LEG_03/R_B_HEEL/Bone.036
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01/R_B_LEG_02/R_B_LEG_03/R_B_HEEL/Bone.036/Bone.036_end
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01/R_B_LEG_02/R_B_LEG_03/R_B_HEEL/R_B_FOOT
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/R_HEUP/R_B_LEG_01/R_B_LEG_02/R_B_LEG_03/R_B_HEEL/R_B_FOOT/R_B_FOOT_end
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/STAARTBEEN
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/STAARTBEEN/SAART_01
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/STAARTBEEN/SAART_01/SAART_02
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/STAARTBEEN/SAART_01/SAART_02/SAART_03
+        weight: 1
+      - path: Armature/BACK_03/BACK_04/STAARTBEEN/SAART_01/SAART_02/SAART_03/SAART_03_end
+        weight: 1
+      - path: Armature/CENTRE
+        weight: 1
+      - path: Armature/CENTRE/CENTRE_end
+        weight: 1
+      - path: Camera
+        weight: 1
+      - path: Cube
+        weight: 1
+      - path: Empty
+        weight: 1
+      - path: Hemi
+        weight: 1
+      - path: Lamp
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.2
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
