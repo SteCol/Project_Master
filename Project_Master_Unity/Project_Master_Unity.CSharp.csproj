@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Camera\CameraDepth.cs" />
     <Compile Include="Assets\Scripts\Camera\Gyro.cs" />
     <Compile Include="Assets\Scripts\Camera\Mouse.cs" />
+    <Compile Include="Assets\Scripts\Companion.cs" />
     <Compile Include="Assets\Scripts\Control\ApplicationControl.cs" />
     <Compile Include="Assets\Scripts\Control\Debugger.cs" />
     <Compile Include="Assets\Scripts\Control\Storage.cs" />
