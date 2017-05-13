@@ -80,18 +80,19 @@
   <ItemGroup>
     <Compile Include="Assets\Assetstore Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_AutoRotate.cs" />
     <Compile Include="Assets\Assetstore Assets\JMO Assets\MatCap Shaders\Demo\Assets\MC_SwitchTexture.cs" />
-    <Compile Include="Assets\Scripts\Accelerometer.cs" />
-    <Compile Include="Assets\Scripts\ApplicationControl.cs" />
-    <Compile Include="Assets\Scripts\CameraDepth.cs" />
-    <Compile Include="Assets\Scripts\Debugger.cs" />
-    <Compile Include="Assets\Scripts\DrawNavPath.cs" />
-    <Compile Include="Assets\Scripts\Gyro.cs" />
-    <Compile Include="Assets\Scripts\Matcher.cs" />
-    <Compile Include="Assets\Scripts\Mouse.cs" />
-    <Compile Include="Assets\Scripts\Steve.cs" />
-    <Compile Include="Assets\Scripts\Storage.cs" />
-    <Compile Include="Assets\Scripts\TransformMirror.cs" />
-    <Compile Include="Assets\Scripts\worldSwitch.cs" />
+    <Compile Include="Assets\Scripts\Camera\Accelerometer.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraDepth.cs" />
+    <Compile Include="Assets\Scripts\Camera\Gyro.cs" />
+    <Compile Include="Assets\Scripts\Camera\Mouse.cs" />
+    <Compile Include="Assets\Scripts\Control\ApplicationControl.cs" />
+    <Compile Include="Assets\Scripts\Control\Debugger.cs" />
+    <Compile Include="Assets\Scripts\Control\Storage.cs" />
+    <Compile Include="Assets\Scripts\Control\worldSwitch.cs" />
+    <Compile Include="Assets\Scripts\Player\AnimationAI.cs" />
+    <Compile Include="Assets\Scripts\Player\DrawNavPath.cs" />
+    <Compile Include="Assets\Scripts\Player\Matcher.cs" />
+    <Compile Include="Assets\Scripts\Player\Steve.cs" />
+    <Compile Include="Assets\Scripts\Player\TransformMirror.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Assetstore Assets\JMO Assets\!JMO Assets Readme.txt" />
