@@ -127,10 +127,10 @@ ModelImporter:
     3300000: Circle
     4300000: Circle
     4300002: Cube
-    7400000: StandToSit
-    7400002: SitToStand
-    7400004: SitIdle
-    7400006: StandIdle
+    7400000: Idle_StandToSit
+    7400002: Idle_SitToStand
+    7400004: Idle_SitIdle
+    7400006: Idle_StandIdle
     9500000: //RootNode
     13700000: Cube
   materials:
@@ -157,7 +157,7 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: StandToSit
+      name: Idle_StandToSit
       takeName: Armature|ArmatureAction.001
       firstFrame: 0
       lastFrame: 36
@@ -303,7 +303,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: SitToStand
+      name: Idle_SitToStand
       takeName: Armature|ArmatureAction.001
       firstFrame: 87
       lastFrame: 120
@@ -449,7 +449,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: SitIdle
+      name: Idle_SitIdle
       takeName: Armature|ArmatureAction.001
       firstFrame: 34
       lastFrame: 81
@@ -595,7 +595,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: StandIdle
+      name: Idle_StandIdle
       takeName: Armature|ArmatureAction.001
       firstFrame: 0
       lastFrame: 0
