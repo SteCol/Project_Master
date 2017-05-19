@@ -1,0 +1,14 @@
+Hi, 
+
+So I've been looking into using a smartphone's gyroscope and descided to use Google VR to control the camera. The problem that I'm having now is that I can't find a way to disable the two-screen sterioscopic view. 
+
+Here's a list of things I've tried:
+
+GvrViewer.Instance.VRModeEnabled doesn't work.
+changing the bool in the script to false doesn't either.
+
+GvrViewer.Instance.ToggleDeviceVRMode(false) WORKS!
+
+
+
+There is no option to do so in the build settings.

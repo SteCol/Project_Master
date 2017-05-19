@@ -3,9 +3,9 @@
 # =============== #
 [Tt]emp/
 [Oo]bj/
-[Bb]uild
-/[Ll]ibrary/
 
+/[Ll]ibrary/
+/[Bb]uilds/
 sysinfo.txt
 *.stackdump
 
@@ -43,11 +43,13 @@ ehthumbs.db
 
 
 [Ll]ibrary/
-
-
+[Bb]uilds/
+[Bb]build/
+/[Bb]uilds/
+/[Bb]Uild/
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
+
+
 /Assets/AssetStoreTools*
